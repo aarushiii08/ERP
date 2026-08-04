@@ -1,10 +1,8 @@
 // buyer shares and sells on a future data, given stock price of n days, trader allowed to make atmost k transactions, new start when previous completed, find max profit that a share trader could have made.
 #include <stdio.h>
-
 int max(int a, int b) {
     return (a > b) ? a : b;
 }
-
 int maxProfit(int price[], int n, int k) {
     int dp[k + 1][n];
 
@@ -32,7 +30,6 @@ int maxProfit(int price[], int n, int k) {
 
     return dp[k][n - 1];
 }
-
 int main() {
     int price[] = {10, 22, 5, 75, 65, 80};
     int n = 6;
